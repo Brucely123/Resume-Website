@@ -156,3 +156,60 @@
   </footer>
 </body>
 </html>
+
+:root{
+  --bg:#ffffff;
+  --bg-alt:#f7f9fc;
+  --text:#222;
+  --accent:#0057b8; /* UCF gold-blue mix */
+  --accent-light:#e5f0ff;
+  --border:#e1e4e8;
+  --font:'Inter',sans-serif;
+}
+
+* {box-sizing:border-box; margin:0; padding:0;}
+body {font-family:var(--font); color:var(--text); line-height:1.6;}
+a {color:var(--accent); text-decoration:none;}
+a:hover{text-decoration:underline;}
+.container{max-width:900px;margin:auto;padding:0 1rem;}
+.section{padding:3rem 0;}
+.section.alt{background:var(--bg-alt);}
+h1,h2,h3,h4{line-height:1.2; margin-bottom:.5em;}
+h1{font-size:2.2rem;}
+h2{font-size:1.8rem; margin-bottom:1rem;}
+
+/* header */
+header{background:var(--accent);color:#fff;padding:2.5rem 0;text-align:center;}
+.tagline{font-size:1.1rem;opacity:.9;margin:.5rem 0 1.5rem;}
+nav{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;}
+nav a{color:#fff;font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:.5px;}
+
+/* buttons */
+.btn{display:inline-block;background:#fff;color:var(--accent);padding:.6rem 1.2rem;border-radius:4px;font-weight:600;margin-top:1rem;}
+.btn:hover{background:var(--accent-light);text-decoration:none;}
+
+/* projects */
+.project{background:#fff;border:1px solid var(--border);border-left:4px solid var(--accent);padding:1.2rem;margin-bottom:1.2rem;border-radius:4px;}
+.tag{display:inline-block;background:var(--accent-light);color:var(--accent);padding:.2rem .5rem;font-size:.75rem;border-radius:3px;margin:.2rem .2rem 0 0;}
+
+/* experience */
+.job{margin-bottom:2rem;}
+.meta{color:#555;font-size:.9rem;margin-bottom:.5rem;}
+ul{margin-left:1.2rem;}
+
+/* skills */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;}
+
+/* contact */
+.contact-list{list-style:none;margin-top:1rem;}
+.contact-list li{margin-bottom:.5rem;}
+
+/* footer */
+footer{background:var(--bg-alt);text-align:center;padding:1.5rem 0;color:#555;font-size:.8rem;}
+
+/* responsive */
+@media(max-width:600px){
+  nav{flex-direction:column;gap:.6rem;}
+  h1{font-size:1.8rem;}
+}
+
